@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Titolo Sito</title>
+    <link>https://username.github.io/</link>
+    <description>Recent content on Titolo Sito</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>youremail@domain.com (Marco Strianese)</managingEditor>
+    <webMaster>youremail@domain.com (Marco Strianese)</webMaster>
+    <atom:link href="https://username.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://username.github.io/electronics/core-tutorial-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>youremail@domain.com (Marco Strianese)</author>
+      <guid>https://username.github.io/electronics/core-tutorial-1/</guid>
+      <description>STM32 HAL Library L&amp;rsquo;ecosistema STMCube permette allo sviluppatore di concentrarsi sul layer applicativo, utilizzando i driver di bassi livello per controllare l&amp;rsquo;hardware forniti direttamente dalla ST.&#xA;STM32 HAL Library Drivers Le HAL sono disponibili per qualsiasi periferica hardware presente nei microcontrollori ST. Inoltre, sono portabili, il che significa che se sviluppo un firmware con, ad esempio, il microcontrollore della famiglia G4 allora, quel firmware, potrà girare su tutti i microcontrollori si quella famiglia e, forse, anche su microcontrollori di altre famiglie, come F4.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://username.github.io/page/binge_readings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>youremail@domain.com (Marco Strianese)</author>
+      <guid>https://username.github.io/page/binge_readings/</guid>
+      <description>Introduzione alla pagina&#xA;Electronic Design Software Development Personal Finance </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://username.github.io/software/23-12-28-opengl-beginner-tutorial-part1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>youremail@domain.com (Marco Strianese)</author>
+      <guid>https://username.github.io/software/23-12-28-opengl-beginner-tutorial-part1/</guid>
+      <description>Tutorial 1: Aprire una finestra Compilazione sotto Windows Per prima cosa scarichiamo i file sorgenti del tutorial da GitHub. Apriamo CMake e impostiamo la cartella dei sorgenti (quella in cui c&amp;rsquo;è il file CMakeList.txt) e quella in cui vogliamo che i file siano generati Clicchiamo su Configure e scegliamo il compilatore Cliccare su Configure fino a quando non scompaiono tutte le linee rosse Cliccare su Generate In questo caso abbiamo scelto come compilatore quello di Visual Studio 2022.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://username.github.io/software/opengl-beginner-tutorial-part-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>youremail@domain.com (Marco Strianese)</author>
+      <guid>https://username.github.io/software/opengl-beginner-tutorial-part-2/</guid>
+      <description>Tutorial 3: Matrici Questo è il tutorial più importante di tutta la serie. Leggilo almeno 8 volte.&#xA;Coordinate omogenee Finora abbiamo rappresentato un punto nello spazio come una terna (x,y,z). Se aggiungiamo una coordinata, passiamo in coordinate omogenee e, un punto nello spazio è rappresentato dal vettore (x,y,z,w). Se w vale 1, i precedenti 3 valori identificano la posizione nello spazio del punto. Se w vale 0 invece stiamo indicando una direzione nello spazio e non un punto in particolare.</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>https://username.github.io/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>youremail@domain.com (Marco Strianese)</author>
+      <guid>https://username.github.io/page/about/</guid>
+      <description>My name is Inigo Montoya. I have the following qualities:&#xA;I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?&#xA;my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+    </item>
+  </channel>
+</rss>

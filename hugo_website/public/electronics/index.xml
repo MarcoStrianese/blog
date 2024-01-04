@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electronics on Titolo Sito</title>
+    <link>https://username.github.io/electronics/</link>
+    <description>Recent content in Electronics on Titolo Sito</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>youremail@domain.com (Marco Strianese)</managingEditor>
+    <webMaster>youremail@domain.com (Marco Strianese)</webMaster>
+    <atom:link href="https://username.github.io/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://username.github.io/electronics/core-tutorial-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>youremail@domain.com (Marco Strianese)</author>
+      <guid>https://username.github.io/electronics/core-tutorial-1/</guid>
+      <description>STM32 HAL Library L&amp;rsquo;ecosistema STMCube permette allo sviluppatore di concentrarsi sul layer applicativo, utilizzando i driver di bassi livello per controllare l&amp;rsquo;hardware forniti direttamente dalla ST.&#xA;STM32 HAL Library Drivers Le HAL sono disponibili per qualsiasi periferica hardware presente nei microcontrollori ST. Inoltre, sono portabili, il che significa che se sviluppo un firmware con, ad esempio, il microcontrollore della famiglia G4 allora, quel firmware, potrà girare su tutti i microcontrollori si quella famiglia e, forse, anche su microcontrollori di altre famiglie, come F4.</description>
+    </item>
+  </channel>
+</rss>

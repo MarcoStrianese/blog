@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Titolo Sito - Binge Readings</title>
+
+  <meta name="description" content="Tutorial 3: Matrici Questo è il tutorial più importante di tutta la serie. Leggilo almeno 8 volte.
+Coordinate omogenee Finora abbiamo rappresentato un punto nello spazio come una terna (x,y,z). Se aggiungiamo una coordinata, passiamo in coordinate omogenee e, un punto nello spazio è rappresentato dal vettore (x,y,z,w). Se w vale 1, i precedenti 3 valori identificano la posizione nello spazio del punto. Se w vale 0 invece stiamo indicando una direzione nello spazio e non un punto in particolare.">
+  <meta name="author" content="Marco Strianese"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Titolo Sito",
+    
+    "url": "https:\/\/username.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/username.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/username.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/username.github.io\/software\/opengl-beginner-tutorial-part-2\/",
+          "name": ""
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Marco Strianese"
+  },
+  "headline": "",
+  "description" : "Tutorial 3: Matrici Questo è il tutorial più importante di tutta la serie. Leggilo almeno 8 volte.\nCoordinate omogenee Finora abbiamo rappresentato un punto nello spazio come una terna (x,y,z). Se aggiungiamo una coordinata, passiamo in coordinate omogenee e, un punto nello spazio è rappresentato dal vettore (x,y,z,w). Se w vale 1, i precedenti 3 valori identificano la posizione nello spazio del punto. Se w vale 0 invece stiamo indicando una direzione nello spazio e non un punto in particolare.",
+  "inLanguage" : "en",
+  "wordCount":  888 ,
+  "datePublished" : "0001-01-01T00:00:00",
+  "dateModified" : "0001-01-01T00:00:00",
+  "image" : "https:\/\/username.github.io\/img\/avatar-icon.png",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/username.github.io\/software\/opengl-beginner-tutorial-part-2\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/username.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/username.github.io\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Titolo Sito" />
+<meta property="og:description" content="Tutorial 3: Matrici Questo è il tutorial più importante di tutta la serie. Leggilo almeno 8 volte.
+Coordinate omogenee Finora abbiamo rappresentato un punto nello spazio come una terna (x,y,z). Se aggiungiamo una coordinata, passiamo in coordinate omogenee e, un punto nello spazio è rappresentato dal vettore (x,y,z,w). Se w vale 1, i precedenti 3 valori identificano la posizione nello spazio del punto. Se w vale 0 invece stiamo indicando una direzione nello spazio e non un punto in particolare.">
+<meta property="og:image" content="https://username.github.io/img/avatar-icon.png" />
+<meta property="og:url" content="https://username.github.io/software/opengl-beginner-tutorial-part-2/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Titolo Sito" />
+
+  <meta name="twitter:title" content="Titolo Sito" />
+  <meta name="twitter:description" content="Tutorial 3: Matrici Questo è il tutorial più importante di tutta la serie. Leggilo almeno 8 volte.
+Coordinate omogenee Finora abbiamo rappresentato un punto nello spazio come una terna (x,y,z). Se …">
+  <meta name="twitter:image" content="https://username.github.io/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href='https://username.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.121.1">
+  <link rel="alternate" href="https://username.github.io/index.xml" type="application/rss+xml" title="Titolo Sito"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://username.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://username.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://username.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://username.github.io">Titolo Sito</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">Posts</a>
+              <div class="navlinks-children">
+                
+                  <a href="/electronics/">Electronics</a>
+                
+                  <a href="/software/">Software Development</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Titolo Sito" href="https://username.github.io">
+            <img class="avatar-img" src="https://username.github.io/img/avatar-icon.png" alt="Titolo Sito" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  <div class="intro-header"></div>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h1 id="tutorial-3-matrici">Tutorial 3: Matrici</h1>
+<p>Questo è il tutorial più importante di tutta la serie. Leggilo almeno 8 volte.</p>
+<h2 id="coordinate-omogenee">Coordinate omogenee</h2>
+<p>Finora abbiamo rappresentato un punto nello spazio come una terna (x,y,z). Se aggiungiamo una coordinata, passiamo in coordinate omogenee e, un punto nello spazio è rappresentato dal vettore (x,y,z,w). Se w vale 1, i precedenti 3 valori identificano la posizione nello spazio del punto. Se w vale 0 invece stiamo indicando una direzione nello spazio e non un punto in particolare. Ci torna comodo passare in coordinate omogenee in modo da utilizzare un&rsquo;unica formula matematica per punti e direzioni.</p>
+<h2 id="matrici-di-trasformazione">Matrici di trasformazione</h2>
+<p>In Computer Graphics utilizzeremo matrici di trasformazione 4x4 che ci permetteranno di trasformare i nostri punti. Quindi, spesso, avremo una moltiplicazione (occhio che l&rsquo;ordine conta, l&rsquo;operazione tra matrici e vettori non è commutativa) tra matrici 4x4 e vettori di 4 componenti.</p>
+<p>A livello di codice per definire vettori e matrici e poter effettuare operazioni tra di loro usiamo la libreria glm:</p>
+<pre><code>glm::mat4 myMatrix;
+glm::vec4 myVector;
+glm::vec4 transformedVector = myMatrix * myVector; // Again, in this order ! this is important.
+</code></pre>
+<p>Le matrici di trasformazione sono matrici 4x4 suddivise fondamentalmente in 2 parti. La &ldquo;parte bassa&rdquo;, ossia l&rsquo;ultima riga, è fissa e vale 0 0 0 1. La parte alta invece è composta da una matrice di rotazione 3x3 e da un parte x y z di traslazione. Se voglio traslare e ruotare un oggetto nello spazio rappresenterò questa informazione, ossia la posizione finale dell&rsquo;oggetto, mediante una matrice di trasformazione e la applicherò all&rsquo;oggetto.</p>
+<h2 id="matrici-di-traslazione">Matrici di traslazione</h2>
+<p>Se voglio traslare un vettore di 10 in direzione X positiva, mi basterà definire la parte di traslazione della matrice di trasformazione come (10,0,0) e lasciare la matrice identità come matrice di rotazione:</p>
+<pre><code>#include &lt;glm/gtx/transform.hpp&gt; // after &lt;glm/glm.hpp&gt;
+glm::mat4 myMatrix = glm::translate(glm::mat4(), glm::vec3(10.0f, 0.0f, 0.0f));
+glm::vec4 myVector(10.0f, 10.0f, 10.0f, 0.0f);
+glm::vec4 transformedVector = myMatrix * myVector; // guess the result
+</code></pre>
+<h2 id="scalare-un-vettore">Scalare un vettore</h2>
+<p>Se vogliamo scalare un vettore in tutte e 3 le direzioni basta mettere la quantità di scala sulla diagonale della matrice di rotazione, all&rsquo;interno della matrice di trasformazione e lasciare la parte di traslazione nulla.</p>
+<h2 id="matrici-di-rotazione">Matrici di rotazione</h2>
+<pre><code>// Use #include &lt;glm/gtc/matrix_transform.hpp&gt; and #include &lt;glm/gtx/transform.hpp&gt;
+glm::vec3 myRotationAxis( ??, ??, ??);
+glm::rotate( angle_in_degrees, myRotationAxis );
+</code></pre>
+<h2 id="cumulating-transformations">Cumulating transformations</h2>
+<p>Quindi, ricapitolando, abbiamo visto come ruotare, traslare e scalare un vettore utilizzando calcoli tra il vettore ed una matrice opportunamente definita. Per ruotare un vettore gli dovrò dare una matrice di rotazione non nulla, per traslarlo gli dovrò dare un set di traslazione non nullo e per scalarlo dovrò popolare la diagonale principale della matrice di rotazione della quantità di scala. Il tutto è relativo alla matrice di trasformazione, la quale contiene sia parte di rotazione che di traslazione. Per ottenere un risultato unico basta combinare tra loro queste matrici:</p>
+<pre><code>TransformedVector = TranslationMatrix * RotationMatrix * ScaleMatrix * OriginalVector;
+</code></pre>
+<h2 id="the-model-view-and-projection-matrices">The Model, View and Projection matrices</h2>
+<p>Le matrici di model, view e projection è un modo pulito di suddividere le trasformazioni.</p>
+<h3 id="the-model-matrix">The Model matrix</h3>
+<p>Qualsiasi oggetto grafico, 2D o 3D, è definito come un set di vertici. Ogni vertice è definito dalle 3 coordinate x, y e z. Tutto è riferito rispetto al sistema di riferimento centrale dell&rsquo;oggetto, quindi se un vertice avrà coordinate (0,0,0), allora quel vertice coinciderà con il centro dell&rsquo;oggetto. Se vogliamo muovere il nostro oggetto, ad esempio perchè magari è controllato tramite mouse e tastiera, questo, matematicamente, si tradurrà in un calcolo tra matrici e vettori. In particolare, ad ogni frame, ogni vertice verrà trasformato, ossia verrà moltiplicato per una matrice di trasformazione. Alla fine di questo calcolo, all&rsquo;interno del frame, avremo tutti i vertici che sono stati trasformati, ossia vederemo l&rsquo;oggetto che si è spostato rispetto alla posizione precedente.</p>
+<p>Quindi, siamo passati da un oggetto che era definito rispetto al suo centro, ad un oggetto che è definito nello spazio. Siamo passati al World Space. Siamo passati dal Model Space al World Space. Nel Model Space tutti i vertici sono definiti rispetto al centro del mondo che, in prima battuta, corrisponde con il centro dell&rsquo;oggetto. Nel World Space tutti i vertici dell&rsquo;oggetto sono definiti rispetto al centro del mondo, ossia il centro della scheda grafica.</p>
+<h3 id="the-view-matrix">The View matrix</h3>
+<p>Se vogliamo vedere una montagna da un&rsquo;angolazione diversa possiamo muovere la camera e tenere ferma la montagna o, tenere ferma la camera e muovere la montagna. Questo è ovviamente impossibile nella realtà ma viene facile in Computer Graphics.</p>
+<p>All&rsquo;inizio la camera è al centro del mondo. Supponiamo di voler muovere la camera di 3 unità positive lungo X. Questo è equivalente a muovere il mondo di 3 unità negative verso X. Quindi, di fatto la camera la teniamo ferma e muoviamo il resto del mondo:</p>
+<pre><code>glm::mat4 ViewMatrix = glm::translate(glm::mat4(), glm::vec3(-3.0f, 0.0f ,0.0f));
+</code></pre>
+<h3 id="the-projection-matrix">The Projection matrix</h3>
+<p>Un punto sullo schermo non è definito soltanto dalle coordinate (x,y). Ad esempio, abbiamo detto che il punto (0,0) si trova al centro dello schermo. In realtà, conta anche il valore Z, ossia quanto il punto è distante dalla camera. Ad esempio, il punto (10,10,10) risulterà più vicino al centro dello schermo rispetto al punto (10,10,5). Questo a causa della prospettiva. Quindi, lo stesso punto di coordiante (x,y) può risultare più o meno vicino al centro dello schermo a causa della prospettiva. La prospettiva è rappresentata da una matrice 4x4</p>
+<h1 id="tutorial-4-un-cubo-colorato">Tutorial 4: Un Cubo Colorato</h1>
+
+
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fusername.github.io%2fsoftware%2fopengl-beginner-tutorial-part-2%2f&amp;text=&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fusername.github.io%2fsoftware%2fopengl-beginner-tutorial-part-2%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fusername.github.io%2fsoftware%2fopengl-beginner-tutorial-part-2%2f&amp;title=" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fusername.github.io%2fsoftware%2fopengl-beginner-tutorial-part-2%2f&amp;title=" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fusername.github.io%2fsoftware%2fopengl-beginner-tutorial-part-2%2f&amp;title=" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fusername.github.io%2fsoftware%2fopengl-beginner-tutorial-part-2%2f&amp;description=" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+            <li class="next">
+              <a href="https://username.github.io/software/23-12-28-opengl-beginner-tutorial-part1/" data-toggle="tooltip" data-placement="top" title="">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="mailto:youremail@domain.com" title="Email me">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://github.com/username" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://linkedin.com/in/username" title="LinkedIn">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://www.instagram.com/username" title="Instagram">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://paypal.me/username" title="PayPal">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-paypal fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="yourwebsite.com">Marco Strianese</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            0001
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://username.github.io">Titolo Sito</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.121.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="https://username.github.io/js/main.js"></script>
+<script src="https://username.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://username.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
