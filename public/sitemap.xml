@@ -2,26 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://username.github.io/</loc>
+    <loc>//il-tuo-url/blogs/</loc>
+    <lastmod>2022-04-08T23:15:00+07:00</lastmod>
   </url><url>
-    <loc>https://username.github.io/electronics/core-tutorial-1/</loc>
+    <loc>//il-tuo-url/blogs/how-to-master-streamlit-for-data-science/</loc>
+    <lastmod>2022-04-08T23:15:00+07:00</lastmod>
   </url><url>
-    <loc>https://username.github.io/page/binge_readings/</loc>
+    <loc>//il-tuo-url/how-to-master-streamlit-for-data-science/</loc>
+    <lastmod>2022-04-08T23:15:00+07:00</lastmod>
   </url><url>
-    <loc>https://username.github.io/software/23-12-28-opengl-beginner-tutorial-part1/</loc>
+    <loc>//il-tuo-url/</loc>
+    <lastmod>2022-04-08T23:15:00+07:00</lastmod>
   </url><url>
-    <loc>https://username.github.io/software/opengl-beginner-tutorial-part-2/</loc>
+    <loc>//il-tuo-url/blogs/what-is-bioinformatics/</loc>
+    <lastmod>2022-04-03T23:15:00+07:00</lastmod>
   </url><url>
-    <loc>https://username.github.io/page/about/</loc>
+    <loc>//il-tuo-url/categories/</loc>
   </url><url>
-    <loc>https://username.github.io/categories/</loc>
-  </url><url>
-    <loc>https://username.github.io/electronics/</loc>
-  </url><url>
-    <loc>https://username.github.io/page/</loc>
-  </url><url>
-    <loc>https://username.github.io/software/</loc>
-  </url><url>
-    <loc>https://username.github.io/tags/</loc>
+    <loc>//il-tuo-url/tags/</loc>
   </url>
 </urlset>
