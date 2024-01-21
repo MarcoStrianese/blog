@@ -1,7 +1,7 @@
 baseurl: "//il-tuo-url"
-languageCode: en-us
-title: Titolo del mio sito
-paginate: 5
+languageCode: it
+title: Meccatronica101
+paginate: 3
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -17,10 +17,10 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Titolo del mio sito 
-  description: "Questo è il mio blog, parleremo di meccatronica ecc ecc"
-  keywords: [Blog, Mechatronics, Software Development, Electronic Design, Mechanical Design, Personal Finance]
-  author: Marco Strianese
+  title: Meccatronica101
+  description: "Benvenuti nel blog della Meccatronica!"
+  keywords: [Blog, Meccatronica, Sviluppo Software, Progettazione Elettronica, Progettazione Meccanica]
+  author: Meccatronica101
   # author: ["Me", "You"] # multiple authors
   #images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -28,10 +28,10 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
@@ -41,45 +41,36 @@ params:
   tocopen: false
 
   label:
-    text: "Marco Strianese"
-    icon: "images/coding.png"
+    text: "Meccatronica101"
+    icon: "images/meccatronica.png"
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: "Benvenuti! \U0001F44B"
-    subtitle: "In questo sito parleremo di meccatronica. Visita la pagine Binge Reading per visualizzare gli articoli scritti in ordine cronologico, 
-    divisi per sezione. Qua ci puoi mettere anche **parole in grassetto**"
-    imageUrl: "images/dp.png"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: "Titolo immagine se non viene mostrata o se ci vado sopra con il mouse"
+    title: "Benvenuta/o! \U0001F44B"
+    subtitle: "In questo sito parleremo di **Meccatronica** in senso lato. Gli articoli tratteranno i temi più svariati, dalla progettazione meccanica, a quella elettronica, 
+    passando per l'informatica. Nella sezione Sommario troverai una panoramica degli articoli in ordine cronologico, dal più recente al meno recente. Nella sezione Blogs, invece, 
+    sono presenti gli articoli veri e propri. Buona lettura! "
+    imageUrl: "images/lampadina.png"
+    imageWidth: 300
+    imageHeight: 300
+    imageTitle: "Tutto nasce da un'idea"
     buttons:
+      - name: Sommario
+        url: sommario
       - name: Blogs
         url: blogs
-      - name: Projects
-        url: projects
+
 
   # home-info mode
   homeInfoParams:
-    Title: "Benvenuti! \U0001F44B"
-    Content: "In questo sito parleremo di meccatronica. Visita la pagine Binge Reading per visualizzare gli articoli scritti in ordine cronologico, 
-    divisi per sezione. Qua ci puoi mettere anche **parole in grassetto**"
+    Title: "Benvenuto/a! \U0001F44B"
+    Content: "In questo sito parleremo di **Meccatronica** in senso lato. Gli articoli tratteranno i temi più svariati, dalla progettazione meccanica, a quella elettronica, 
+    passando per l'informatica. Nella sezione Sommario troverai una panoramica degli articoli in ordine cronologico, dal più recente al meno recente. Nella sezione Blogs, invece, 
+    sono presenti gli articoli veri e propri. Buona lettura! "
 
-  socialIcons:
-    - name: youtube
-      url: "http://youtube.com/dataprofessor"
-    - name: medium
-      url: "https://medium.com/@data-professor"
-    - name: twitter
-      url: "https://twitter.com/thedataprof"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/chanin-nantasenamat/"
-    - name: github
-      url: "https://github.com/dataprofessor"
-    - name: buymeacoffee
-      url: "https://www.buymeacoffee.com/dataprofessor"
+
 
   analytics:
     google:
@@ -114,26 +105,17 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 4
+
     - identifier: blog
       name: Blogs
-      url: /blogs/
-      weight: 1
-    - identifier: projects
-      name: Projects
-      url: /projects/
+      url: /blog/
       weight: 2
-    - identifier: infographics
-      name: Infographics
-      url: /infographics/
-      weight: 3
-    #- identifier: tags
-    #  name: tags
-    #  url: /tags/
-    #  weight: 4
+    - identifier: sommario
+      name: Sommario
+      url: /sommario/
+      weight: 1
+
+
 
     #- identifier: example
     #  name: example.org
