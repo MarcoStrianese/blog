@@ -108,7 +108,7 @@ menu:
 
     - identifier: blog
       name: Blogs
-      url: /blog/
+      url: /blogs/
       weight: 2
     - identifier: sommario
       name: Sommario
