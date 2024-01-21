@@ -6,8 +6,15 @@
     <description>Recent content on Meccatronica101</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Fri, 08 Apr 2022 23:15:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2024 23:15:00 +0700</lastBuildDate>
     <atom:link href="//il-tuo-url/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Controllo di versione del Software</title>
+      <link>//il-tuo-url/blogs/controllo-di-versione-del-software/</link>
+      <pubDate>Sun, 21 Jan 2024 23:15:00 +0700</pubDate>
+      <guid>//il-tuo-url/blogs/controllo-di-versione-del-software/</guid>
+      <description>Introduzione Benvenuti, in questo articolo parleremo del controllo di versione del software. Ci tengo a precisare che questo sarà un articolo di &amp;ldquo;alto livello&amp;rdquo;, ossia non scenderò nel tecnico dei comandi specifici o di come si utilizza il controllo di versione del software, ma cercherò di rispondere alla domanda: cos&amp;rsquo;è e a cosa serve il version control? Sebbene questa domanda possa sembrare banale per chi ha un forte background informatico e si occupa, quotidianamente, dello sviluppo software, potrebbe non essere altrettanto per coloro che di mestiere non sono sviluppatori ma che, per curiosità o necessità, hanno scritto del codice nonostante non fosse la loro attività principale.</description>
+    </item>
     <item>
       <title>How to master Streamlit for Data Science</title>
       <link>//il-tuo-url/blogs/how-to-master-streamlit-for-data-science/</link>
