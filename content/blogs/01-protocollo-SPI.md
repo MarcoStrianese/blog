@@ -1,18 +1,14 @@
 ---
 title: "Il Protocollo SPI"
-date: 2024-01-28T23:15:00+07:00
-slug: protocollo-SPI
-category: progettazione elettronica
+date: 2024-01-30T23:15:00+07:00
+slug: Il-Protocollo-SPI
+category: Elettronica
 summary:
 description: 
-cover:
-  image: 
-  alt: 
-  caption: 
-  relative: true
 showtoc: true
 draft: false
 ---
+
 
 # Il protcollo SPI
 
@@ -42,7 +38,7 @@ Il caso tipico di comunicazione SPI è quello tra microcontrollore e sensore, in
 ### SPI a 4 fili
 Fisicamente l'SPI ha 4 pin fisici. Esiste anche la versione a 3 fili, però in questo caso considereremo quella più comune, con le linee di Chip Select (CS o SS), clock (SCLK), Master Output Slave Input (MOSI), Master Input Slave Output (MISO):
 
-![SPI a 4 fili](/static/images//spi-4-wire.png)
+![SPI a 4 fili](/static/images/spi-4-wire.png)
 
 *SPI a 4 fili*
 
@@ -59,12 +55,9 @@ lo stato del clock può essere o alto o basso, il fronte può essere di salita o
 
 Lo stato di idle indica lo stato del clock quando non sta comunicando. Quindi a riposo, il clock può essere alto o basso, a seconda di come impostiamo il CPOL, se a 1 o a 0. Con il chip select impostato come active-low signal avremo che lo stato di idle del clock sarà delimitato a quei casi in cui il pin CS sarà alto, in quanto quando sarà basso significa che stiamo comunicando sul bus SPI. Con il CPHA indichiamo invece su quale fronte del clock il ricevitore dovrà campionare il dato. Possiamo impostare che il ricevitore campioni il dato sul fronte di salita o sul fronte di discesa del clock. Attenzione che il termine ricevitore non è sinonimo di dispositivo collegato al bus SPI, in quanto anche il master può essere un ricevitore, in quanto può ricevere dati sulla linea MISO. 
 
-CS: active low
-CPOL e CPHA: modi SPI, velocità comunicazione
-MOSI
-MISO
+Quando definiamo la velocità del protocollo SPI, lo facciamo in Hz, o meglio in kHz o MHz. Con questo dato, in particolare, ci stiamo riferendo alla frequenza di clock del pin SCLK. Definendo una velocità di trasmissione a 500 kHz, avremo un segnale di clock a 500 kHz, ossia che un'onda quadra di 2 microsecondi. Sappiamo quindi che ad ogni ciclo di clock, più precisamente nel fronte di salita o di discesa di esso (in base al modo impostato), manderemo un bit. Questo significa che manderemo 500 milioni di bit in un secondo. Per sapere quanti byte mandiamo al secondo basterà dividere questo numero per 8, ottenendo 62.5 byte al secondo. Noto il numero di byte che voglio mandare e quanti byte mando al secondo è immediato calcolare il tempo che ci impieghiamo a trasmettere. 
 
-Necessità di sapere quando ricevo i dati dallo slave. 
+Con il protocollo SPI è sempre il master che genera il clock, di conseguenza esso deve sapere quando lo slave gli risponderà in modo che possa fornirgli il segnale giusto sul pin SCLK. Questo nei sensori si presta bene, in quanto possiamo immaginare che il master mandi un primo messaggio di READ_DATA e, dopo, potrà continuare a generare il clock in quanto si aspetta che lo slave, ovvero il sensore, gli risponda con il dato richiesto. Questo non funziona altrettanto bene in casi in cui la comunicazione da slave verso master non è deterministica, ad esempio se devo segnalare al master che è stato premuto un pulsante che viene letto dallo slave. Non potrò sapere a priori quando l'utente premerà il pulsante, quindi dovrò implementare meccanismi opportuni in modo che lo slave possa comunicare con il master quando vuole. 
 
 ### Comunicazione con n nodi
 
